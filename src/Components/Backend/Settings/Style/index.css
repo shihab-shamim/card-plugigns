@@ -1,0 +1,65 @@
+/* Ensure the input inside TextControl gets the styles */
+.custom-input input {
+    width: 400px !important; /* Force width to apply */
+    height: 60px !important; /* Force height to apply */
+}
+
+.custom-input-age input{
+    width: 816px !important; 
+    height: 60px !important; 
+
+}
+.custom-input-gender select{
+    width: 816px !important; 
+    height: 60px !important; 
+
+}
+.custom-input-gender {
+    width: 816px !important; 
+    /* height: 60px !important;  */
+
+}
+/* Ensure the wrapper div also has the required width and height */
+.custom-input-code .components-text-control__input {
+    width: 200px !important;
+    height: 60px !important;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.custom-input-phone .components-text-control__input {
+    width: 600px !important;
+    height: 60px !important;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.custom-input-image {
+    width: 816px;              /* Set the width to 816px */
+    height: 60px;              /* Set the height to 60px */
+    border: 1px solid gray;    /* Set border color */
+    padding: 8px;              /* Adds padding */
+    border-radius: 4px;        /* Rounded corners */
+    opacity: 0;                /* Hide the default file input button */
+    position: absolute;        /* Position the input out of view */
+}
+
+
+
+.custom-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 816px;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-icon {
+    margin-right: 8px; /* Space between the icon and text */
+}
+

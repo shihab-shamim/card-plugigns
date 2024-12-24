@@ -1,0 +1,85 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "b-blocks/test-purpose",
+  "version": "1.0.0",
+  "title": "card plugging",
+  "category": "widgets",
+  "description": "Short description of the Test Purpose",
+  "keywords": [
+    " from"
+  ],
+  "textdomain": "b-blocks",
+  "attributes": {
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "purposeType": {
+      "type": "string",
+      "default": "test"
+    },
+    "colors": {
+      "type": "object",
+      "default": {
+        "color": "black",
+        "bg": "#B1C5A4"
+      }
+    },
+    "author": {
+      "type": "",
+      "default": "shihab shamim"
+    },
+    "title": {
+      "type": "string",
+      "default": "Morning Set"
+    },
+    "description": {
+      "type": "string",
+      "default": "set of coffee and chocolate cookies as a top tier among our customers and perfect way to start your day."
+    },
+    "button": {
+      "type": "string",
+      "default": "Order Now"
+    },
+    "tags": {
+      "type": "array",
+      "default": [
+        "sugar",
+        "vanilla aroma",
+        "cherry jam"
+      ]
+    },
+    "price": {
+      "type": "number",
+      "default": 8
+    },
+    "image": {
+      "type": "string",
+      "default": "https://i.ibb.co/wLYK5Mx/b7d265385258f97c086294f92e26bb1a.jpg"
+    },
+    "categoryColor": {
+      "type": "string",
+      "default": "#ffcc66"
+    },
+    "buttonColor": {
+      "type": "string",
+      "default": "#000000"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  },
+  "example": {
+    "attributes": {}
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./view.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
