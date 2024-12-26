@@ -7,7 +7,7 @@
   "category": "widgets",
   "description": "Short description of the Test Purpose",
   "keywords": [
-    " from"
+    " card"
   ],
   "textdomain": "b-blocks",
   "attributes": {
@@ -59,12 +59,122 @@
       "default": "https://i.ibb.co/wLYK5Mx/b7d265385258f97c086294f92e26bb1a.jpg"
     },
     "categoryColor": {
-      "type": "string",
-      "default": "#ffcc66"
+      "type": "object",
+      "default": {
+        "color": "#FF0000",
+        "bg": "#FFA500",
+        "border": "15px",
+        "fontSize": "12px",
+        "padding": {
+          "top": "5px",
+          "right": "10px",
+          "left": "10px",
+          "bottom": "5px"
+        }
+      }
     },
     "buttonColor": {
       "type": "string",
-      "default": "#000000"
+      "default": "red"
+    },
+    "card": {
+      "type": "object",
+      "default": {
+        "width": "400px",
+        "height": "500px"
+      }
+    },
+    "cardColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "cardPadding": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "left": "0px",
+        "right": "0px",
+        "bottom": "0px"
+      }
+    },
+    "cardMargin": {
+      "type": "object",
+      "default": {
+        "mtop": "10px",
+        "mleft": "10px",
+        "mright": "10px",
+        "mbottom": "10px"
+      }
+    },
+    "cardRadius": {
+      "type": "object",
+      "default": {
+        "top": "15px",
+        "left": "15px",
+        "right": "15px",
+        "bottom": "15px"
+      }
+    },
+    "boxShadow": {
+      "type": "object",
+      "default": {
+        "shadowOffsetX": "50px",
+        "shadowOffsetY": "100px",
+        "blurRadius": "150px",
+        "spreadRadius": "100px",
+        "shadowColor": "rgba(0, 0, 0, 0.9)"
+      }
+    },
+    "cardBorder": {
+      "type": "object",
+      "default": {
+        "width": "5px",
+        "style": "solid",
+        "color": "#FF0000"
+      }
+    },
+    "imageWidth": {
+      "type": "object",
+      "default": {
+        "width": "300px",
+        "height": "200px"
+      }
+    },
+    "titleTypo": {
+      "type": "object",
+      "default": {
+        "font": "24px",
+        "color": "#333333",
+        "bg": "#ffffff",
+        "weight": "bold",
+        "word": "30px",
+        "tag": "h2"
+      }
+    },
+    "descriptionTypo": {
+      "type": "object",
+      "default": {
+        "font": "14px",
+        "color": "666666",
+        "bg": "#ffffff",
+        "weight": "normal",
+        "word": "1px"
+      }
+    },
+    "buttonStyle": {
+      "type": "object",
+      "default": {
+        "font": "16px",
+        "weight": "bold",
+        "color": "#820000",
+        "border": "25px",
+        "padding": {
+          "top": "10px",
+          "right": "20px",
+          "left": "20px",
+          "bottom": "10px"
+        }
+      }
     }
   },
   "supports": {

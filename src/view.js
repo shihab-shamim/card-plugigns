@@ -8,13 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	blockNameEls.forEach(blockNameEl => {
 		const attributes = JSON.parse(blockNameEl.dataset.attributes);
 
-		console.log('something');
-		
 
 		createRoot(blockNameEl).render(<>
 			<Style attributes={attributes} id={blockNameEl.id} />
 
 			<BlockName attributes={attributes} />
+			
+
+			
 		</>);
 
 		blockNameEl?.removeAttribute('data-attributes');

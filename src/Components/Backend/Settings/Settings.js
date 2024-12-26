@@ -31,7 +31,9 @@ const Settings = ({ attributes, setAttributes }) => {
 
 		<BlockControls>
 
-			<AlignmentToolbar value={alignment} onChange={val => setAttributes({ alignment: val })} describedBy={__('Block Name Alignment')} alignmentControls={[
+			<AlignmentToolbar value={alignment}  onChange={(val)=>{
+				setAttributes({alignment:val})
+			}} describedBy={__('Block Name Alignment')} alignmentControls={[
 				{ title: __('Block Name in left', 'textdomain'), align: 'left', icon: 'align-left' },
 				{ title: __('Block Name in center', 'textdomain'), align: 'center', icon: 'align-center' },
 				{ title: __('Block Name in right', 'textdomain'), align: 'right', icon: 'align-right' }
