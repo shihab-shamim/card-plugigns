@@ -25,19 +25,7 @@ const Style = ({ attributes, setAttributes }) => {
         title={__("Category-Style", "b-blocks")}
         initialOpen={false}
       >
-         {/* "categoryColor":{
-              "type":"object",
-              "default":{
-                "color":"#000000",
-                "bg":"#FFFF00",
-                "border":"15px",
-                "padding":{
-                  "top":"5px",
-                  "right":"10px",
-                  "left":"5px",
-                  "bottom":"10px"
-                }
-              } */}
+         
               <label>Category-Color</label>
         <ColorPicker
 	color={categoryColor.color  }
@@ -73,22 +61,6 @@ label="Category-padding"
 	color={buttonColor}
   onChange={(color)=>setAttributes({buttonColor:color})}
 />
-
- {/* "buttonStyle":{
-      "type":"object",
-      "default":{
-        "font":"12px",
-        "weight":"bold",
-        "color":"#222222",
-        "border":"25px",
-        "padding":{
-          "top":"10px",
-          "right":"200px",
-          "left":"20px",
-          "bottom":"10px"
-        }
-      }
-    } */}
     <UnitControl
 	onChange={(v)=>setAttributes({buttonStyle:{...buttonStyle,font:v}})}
 	onUnitChange={ e => console.log("new unit",e) }
@@ -98,7 +70,7 @@ label="Category-padding"
   />
 <SelectControl
 	label={ __( 'Title-Font-Weight:' ) }
-	value={ buttonStyle?.weight } // e.g: value = [ 'a', 'c' ]
+	value={ buttonStyle?.weight }
   onChange={(v)=>setAttributes({buttonStyle:{...buttonStyle,weight:v}})}
 
 	options={ [
@@ -239,7 +211,7 @@ onChange={(co)=>setAttributes({boxShadow:{...boxShadow,shadowColor:co}})}
 
 <SelectControl
 	label={ __( 'Card-Border-Style:' ) }
-	value={ cardBorder?.style } // e.g: value = [ 'a', 'c' ]
+	value={ cardBorder?.style } 
   onChange={(v)=>setAttributes({cardBorder:{...cardBorder,style:v}})}
 
 	options={ [
@@ -361,7 +333,7 @@ onChange={(co)=>setAttributes({boxShadow:{...boxShadow,shadowColor:co}})}
   />
   <SelectControl
 	label={ __( 'ont-Weight:' ) }
-	value={ descriptionTypo?.weight } // e.g: value = [ 'a', 'c' ]
+	value={ descriptionTypo?.weight }
   onChange={(v)=>setAttributes({descriptionTypo:{...descriptionTypo,weight:v}})}
 
 	options={ [
